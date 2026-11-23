@@ -12,11 +12,15 @@ For a receiver, define $`\eta_S=\langle Z_S\psi,E_SZ_S\psi\rangle`$ on a pure in
 For a mixed input the coefficient is averaged over its pure components. Let $`\eta^*_{N,k}(r)`$ be the largest worst-subset coefficient. The same optimal preparation and receiver attain the corresponding pointwise success for every angle in the interval.
 
 ```math
-\begin{aligned}
-\eta^*_{N,k}(r)&=0 &&(r<k),\\
-\eta^*_{N,k}(k)&=\frac{1}{\binom Nk},\\
-\eta^*_{N,1}(r)&=\min\{1,r^2/N\} &&(r\ge 0).
-\end{aligned}
+\eta^*_{N,k}(r)=0\quad(r<k).
+```
+
+```math
+\eta^*_{N,k}(k)=\frac{1}{\binom Nk}.
+```
+
+```math
+\eta^*_{N,1}(r)=\min\{1,r^2/N\}\quad(r\geq0).
 ```
 
 Thus $`k`$ bypass qubits are necessary and sufficient for a positive probability at every nonidentity angle. For one fault, $`\lceil\sqrt N\rceil`$ bypass qubits suffice to attain the unrestricted success coefficient of one.
@@ -81,7 +85,7 @@ Every effect preserves total charge. The reciprocal identities isolate the term 
 
 ## Exact tradeoff for one fault
 
-For $`k=1`$, $`K_1=N-2q`$. On each pure component in a fixed total-charge sector, choose $`g=\langle K_1\rangle`$. The charge bound gives $`\sum_i\eta_i\le 4\operatorname{Var}(q)\le r^2`$, using the variance bound for a variable in an interval of width at most $`r`$. Each $`\eta_i`$ is also at most one. The preceding mixture argument gives the claimed upper bound.
+For $`k=1`$, $`K_1=N-2q`$. On each pure component in a fixed total-charge sector, choose $`g=\langle K_1\rangle`$. The charge bound gives $`\sum_i\eta_i\le 4\mathrm{Var}(q)\le r^2`$, using the variance bound for a variable in an interval of width at most $`r`$. Each $`\eta_i`$ is also at most one. The preceding mixture argument gives the claimed upper bound.
 
 For the construction, let $`q`$ follow a chosen distribution on consecutive allowed charges. Within each charge use the uniform superposition of sensor strings, paired with one known bypass string of complementary charge. The resulting pure preparation is permutation symmetric on the sensors. Define
 
@@ -93,7 +97,7 @@ G_{ij}=\langle v_i,v_j\rangle.
 The matrix $`G`$ is the covariance of the exchangeable signs $`1-2x_i`$ under the preparation's sensor-string probabilities. It is constant on the diagonal and separately constant off the diagonal. Its eigenvalue along the all-ones vector and its eigenvalue on the orthogonal complement are
 
 ```math
-\lambda_{\parallel}=\frac{4\operatorname{Var}(q)}{N},\qquad
+\lambda_{\parallel}=\frac{4\mathrm{Var}(q)}{N},\qquad
 \lambda_{\perp}=\frac{4\,\mathbb E[q(N-q)]}{N(N-1)}.
 ```
 

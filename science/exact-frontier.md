@@ -113,14 +113,15 @@ $`DU^t h=t(N-2j-t+1)U^{t-1}h`$. With the factorial normalization of $`B`$, this
 implies
 
 ```math
-\begin{aligned}
-\|B_{s,j}h\|^2&=\binom{N-2j}{s-j}\|h\|^2,\\
-B_{s,i}^*B_{s,j}h
-&=\begin{cases}
-0 & i<j,\\
-\binom{N-i-j}{s-i}B_{i,j}h & j\le i\le s.
-\end{cases}
-\end{aligned}
+\|B_{s,j}h\|^2=\binom{N-2j}{s-j}\|h\|^2.
+```
+
+```math
+B_{s,i}^*B_{s,j}h=0\quad(i<j).
+```
+
+```math
+B_{s,i}^*B_{s,j}h=\binom{N-i-j}{s-i}B_{i,j}h\quad(j\leq i\leq s).
 ```
 
 The zero in this identity proves orthogonality. Injectivity of the raising map
@@ -209,7 +210,7 @@ $`\binom Nk\ge (N/2)^k/k!`$. Thus, uniformly over $`N\ge2k`$ and integers $`r\ge
 The preceding estimate guarantees a constant fraction of the unrestricted receiver
 at width of order $`\sqrt N`$ for fixed $`k`$. The same order of width can also
 recover the unrestricted coefficient exactly. If the first $`2k`$ moments of $`w`$
-agree with those of $`\operatorname{Bin}(N,1/2)`$, the Gram matrix is the identity.
+agree with those of $`\mathrm{Bin}(N,1/2)`$, the Gram matrix is the identity.
 Indeed, $`K_\ell(w)`$ has degree $`\ell`$ and for the binomial distribution the bit
 string is uniform. Its sign products for all nonempty sets have zero expectation.
 The resulting charge-tagged probe therefore has orthonormal moment vectors up to
