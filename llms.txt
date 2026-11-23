@@ -1,0 +1,13 @@
+# Quantum Trajectory Reference Threshold
+
+> One-shot, zero-error identification of a phase-rotated k-subset using a finite number of idle charge qubits.
+
+A report is always correct in the stated ideal model. It may be inconclusive. The angle is unknown to the probe and measurement, and the resource is idle 0/1 excitation modes during one parallel interrogation. Read the following files in order for the proof.
+
+- [Model and moment isolation](science/model.md): fault channel, reference and abstention rules, and the radial inequality.
+- [Exact endpoints](science/exact-endpoints.md): threshold r=k, explicit optimal sparse receiver, and exact k=1 success.
+- [Finite frontier](science/exact-frontier.md): finite moment optimization, modular construction and fixed-k asymptotics.
+- [Implementation](science/implementation.md): conserving realizations, neutral registers and the gate and routing assumptions.
+- [Related work](references/RELATED_WORK.md): attribution and comparison with known-angle sensors and the independent Bell receiver.
+- [Learning route](learning/README.md): selected review, bridge and milestone path.
+- [Verification](verification/README.md): reproducible finite calculations and their scope.
